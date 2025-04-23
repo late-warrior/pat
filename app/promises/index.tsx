@@ -1,4 +1,4 @@
-import type { Route } from "./+types/promises";
+import type { Route } from "+types/app/promises/+types";
 import { Navbar } from "../components/Navbar";
 import { useState } from "react";
 

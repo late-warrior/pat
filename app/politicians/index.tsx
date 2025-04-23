@@ -1,4 +1,4 @@
-import type { Route } from "./+types/politicians";
+import type { Route } from "+types/app/politicians/+types";
 import { Navbar } from "../components/Navbar";
 
 export function meta({}: Route.MetaArgs) {

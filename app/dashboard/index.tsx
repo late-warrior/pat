@@ -1,4 +1,4 @@
-import type { Route } from "./+types/dashboard";
+import type { Route } from "+types/app/dashboard/+types";
 import { Navbar } from "../components/Navbar";
 
 export function meta({}: Route.MetaArgs) {
