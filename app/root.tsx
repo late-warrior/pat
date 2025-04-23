@@ -45,6 +45,21 @@ export default function App() {
   return <Outlet />;
 }
 
+// Hydrate fallback component for SPA mode
+export function HydrateFallback() {
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
+      <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-md text-center">
+        <h2 className="text-2xl font-bold mb-4">Loading Application...</h2>
+        <div className="flex justify-center mb-4">
+          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+        </div>
+        <p className="text-gray-600">Initializing the Political Accountability Tracker</p>
+      </div>
+    </div>
+  );
+}
+
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   let message = "Oops!";
   let details = "An unexpected error occurred.";
